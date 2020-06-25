@@ -328,6 +328,12 @@ animation-delay: 100ms;
 }
 
 @media (min-width: 600px) {
+  .unit { 
+
+    position:relative;
+   margin-right:3em;
+   margin-bottom:3em;
+  }
   .mars-current-weather{
 display:grid;
 row-gap: 2em;
@@ -407,9 +413,9 @@ grid-row: 1 / span 2;
 
 .unit { 
 
-  position:absolute;
-  left:2em;
-  top:2em;
+  position:relative;
+ margin-right:3em;
+ margin-bottom:3em;
 }
 
 .info{
