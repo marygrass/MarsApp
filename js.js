@@ -109,11 +109,15 @@ function getWeather() {
             return Object.entries(solData).map(([sol, data]) => {
                 return {
                     sol: sol,
-                    maxTemp: data.AT.mx,
-                    minTemp: data.AT.mn,
-                    windSpeed: data.HWS.av,
-                    windDirectionDegrees: data.WD.most_common.compass_degrees,
-                    windDirectionCardinal: data.WD.most_common.compass_point,
+                    maxTemp: data.PRE.mx,
+                    minTemp: data.PRE.mn,
+                
+                    windSpeed:4,
+                    windDirectionDegrees: 20.0,
+                  //  windDirectionCardinal: N,
+
+                   // windDirectionDegrees: data.WD.most_common.compass_degrees,
+                  //  windDirectionCardinal: data.WD.most_common.compass_point,
                     date: new Date(data.Last_UTC)
                 }
             });
